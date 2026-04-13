@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Underwater Treasure Dive</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-shell">
+    <h1>🌊 Underwater Treasure Dive 🌊</h1>
+
+    <div class="hud">
+      <div id="score">Score: 0</div>
+      <div id="items">Items: 0</div>
+      <div id="lives">Lives: 3</div>
+      <div id="status">Use arrow keys to move. Press space to shoot harpoons.</div>
+    </div>
+
+    <div class="canvas-wrap">
+      <canvas id="gameCanvas" width="1100" height="650"></canvas>
+
+      <div id="startScreen" class="overlay visible">
+        <div class="overlay-card">
+          <h2>Deep Sea Mission</h2>
+          <p>Collect pearls, starfish, treasure, and turtles. Avoid sharks, shoot harpoons, and survive the coral maze.</p>
+          <button id="startBtn">Start Game</button>
+        </div>
+      </div>
+
+      <div id="endScreen" class="overlay">
+        <div class="overlay-card">
+          <h2 id="endTitle">Game Over</h2>
+          <p id="endMessage">The sharks got you.</p>
+          <button id="restartBtn">Restart Game</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
